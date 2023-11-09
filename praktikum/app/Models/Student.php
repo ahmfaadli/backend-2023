@@ -8,5 +8,6 @@ use Illuminate\Support\Facades\DB;
 
 class Student extends Model
 {
+    use HasFactory;
     protected $guarded = ['id'];
 }
