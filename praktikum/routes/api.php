@@ -41,3 +41,7 @@ Route::put('/students/{id}', [StudentController::class, 'update']);
 Route::delete('/students/{id}', [StudentController::class, 'destroy']);
 
 Route::get('/students/{id}', [StudentController::class, 'show']);
+
+//Membuat route untuk register dan login
+Route::post('/register',[AuthController::class, 'register']);
+Route::post('/login', [AuthController::class, 'login']);
